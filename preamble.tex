@@ -1,0 +1,82 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+% Preámbulo del documento                                                     %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Paquetes esenciales
+%\documentclass[11pt, a4paper]{article}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype} % Mejora la tipografía
+\usepackage{geometry}
+\geometry{left=3cm,right=3cm,top=3cm,bottom=3cm}
+
+% Tipografías modernas
+%\usepackage{firamath-otf}
+\usepackage[sfdefault]{FiraSans} % Fira Sans como fuente principal
+\usepackage{FiraMono} % Fira Mono para código
+
+
+% Paquetes para imágenes y tablas
+\usepackage{graphicx}
+\usepackage{tabularx, booktabs}
+\usepackage{float}
+
+% Estilos de párrafos
+\usepackage{parskip}
+\setlength{\parskip}{0.5em}
+
+% Colores y diseño
+\usepackage{xcolor}
+\definecolor{primary}{RGB}{0, 90, 180} % Azul
+\definecolor{secondary}{RGB}{90, 180, 0} % Verde
+\usepackage{sectsty}
+\allsectionsfont{\sffamily\color{primary}} % Colores para secciones
+% Colores para el documento
+\definecolor{guindapoli}{RGB}{102, 0, 51}
+\definecolor{azulescom}{RGB}{0, 0, 102}
+\definecolor{azulclaro}{RGB}{222, 232, 255}
+\definecolor{azulfuerte}{RGB}{60, 150, 250}
+\definecolor{blanco}{RGB}{255, 255, 255}
+
+% Códigos y listados
+\usepackage{listings}
+\lstdefinestyle{codeStyle}{
+    backgroundcolor=\color{gray!10}, % Fondo gris claro para el código
+    commentstyle=\color{green!40!black},
+    keywordstyle=\color{primary},
+    numberstyle=\tiny\color{gray},
+    stringstyle=\color{orange},
+    basicstyle=\ttfamily\small,
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=5pt,
+    showspaces=false,
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=4
+}
+\lstset{style=codeStyle}
+
+% Enlaces y URLs
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=magenta,
+    urlcolor=blue,
+}
+
+% Glosarios y apéndices
+\usepackage[acronym,toc]{glossaries}
+\makeglossaries
+\usepackage[toc,page]{appendix}
+
+% Para mostrar unidades correctamente
+\usepackage{siunitx}
+

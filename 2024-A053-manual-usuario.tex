@@ -1,0 +1,142 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+% Trabajo Terminal 2024-A053                                                  %
+%                                                                             %
+% Manual de usuario para la plataforma web de estimación de precios de        %
+% mercado de departamentos en la Ciudad de México                             %
+%                                                                             %
+% Estimación de precios de mercado de departamentos en la Ciudad de México    %
+%                                                                             %
+% Alumno: Humberto Alejandro Ortega Alcocer                                   %
+% Director: Mtro. Ariel López Rojas                                           %
+%                                                                             %
+% Escuela Superior de Cómputo                                                 %
+% Instituto Politécnico Nacional                                              %
+%                                                                             %
+% 2023 - 2024                                                                 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Configuración del documento
+% !TeX program = pdflatex
+% !TeX encoding = UTF-8
+% !TeX root = 2024-A053-manual-usuario.tex
+% !TeX spellcheck = es_MX
+
+% Define el tipo de documento
+%\documentclass[12pt, a4paper, titlepage]{scrbook} % Formato de libro
+\documentclass[12pt, a4paper, titlepage]{report} % Formato de reporte
+
+% Importamos el preámbulo
+\input{preamble}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+% Inicio del documento                                                        %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+% Portada                                                                     %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\begin{titlepage}
+		\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+    \begin{minipage}{0.48\textwidth}
+      \begin{flushleft}
+        \includegraphics[scale = 0.10]{imagenes/logotipos/escom.png}
+      \end{flushleft}\end{minipage}
+      \begin{minipage}{0.48\textwidth} \begin{flushright}
+        \includegraphics[scale = 0.55]{imagenes/logotipos/ipn.png}
+      \end{flushright}
+    \end{minipage}
+    \vspace*{.25cm}
+		\begin{center}
+			\begin{LARGE}
+				\textcolor{guindapoli}{Instituto Politécnico Nacional}\\
+			\end{LARGE}
+			\vspace*{0.2in}
+			\begin{Large}
+				\textcolor{azulescom}{Escuela Superior de Cómputo}\\
+			\end{Large}
+			\vspace*{0.4in}
+			\begin{large}
+			  Manual de Usuario
+			\end{large}
+
+			\vspace*{0.2in}
+
+			\begin{Large}
+				\textbf{Plataforma web para la estimación de precios de mercado de departamentos en la Ciudad de México}\\
+			\end{Large}
+			\vspace*{0.2in}
+			\begin{large}
+				TT No. 2024-A053\\
+			\end{large}
+			\vspace*{0.2in}
+			\rule{80mm}{.1mm}\\
+			\vspace*{0.1in}
+			\begin{large}
+				\begin{center}
+					\textbf{Presenta}:\\
+					Humberto Alejandro Ortega Alcocer\\
+				\end{center}
+			\end{large}
+			\begin{large}
+				\textbf{Director}:\\
+				Ariel López Rojas\\
+			\end{large}
+		\end{center}
+	\end{titlepage}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+% Índice                                                                      %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  % Cambiar nombre de Apéndice a Índice
+  \renewcommand\appendixpagename{Índice}
+  \renewcommand\appendixtocname{Índice}
+
+  \appendixpageoff
+
+  \begin{appendices}
+    \renewcommand*\contentsname{{\textcolor{azulescom}{Índice.}}}
+    \tableofcontents
+    \newpage
+
+    % Índice de figuras
+    \renewcommand*\listfigurename{{\textcolor{azulescom}{Índice de figuras.}}}
+    \listoffigures
+    \newpage
+
+    % Índice de tablas
+    \newpage
+    \renewcommand*\listtablename{{\textcolor{azulescom}{Índice de cuadros.}}}
+    \listoftables
+
+  \end{appendices}
+  \newpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+% Secciones del documento                                                     %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \input{sections/01-introduccion}
+  \input{sections/02-requerimientos}
+  \input{sections/03-estimacion-precios}
+  \input{sections/04-acerca-de}
+  \input{sections/05-mapa-interactivo}
+  \input{sections/06-api-publica}
+  \input{sections/07-preguntas-frecuentes}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                             %
+% Fin del documento                                                           %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+
+% Humberto Alejandro Ortega Alcocer
